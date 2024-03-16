@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Keep Notes</h1>
+        <div class="search">
+            <button id="searchbutton"><img src="search_FILL0_wght400_GRAD0_opsz48.png" height="28px"
+                    width="28px"></button>
+            <input type="search" name="search" id="search" class="searchbox" placeholder="Search">
+            <button class="cross"><img src="close_FILL0_wght400_GRAD0_opsz48.png" height="28px" width="28px"></button>
+        </div>
+    </div>
+    <main>
+        <div class="createnote">
+            <div class="textfield">
+                <label for="addedtext">Add Title:</label>
+                <input type="text" name="text" id="addedtitle" placeholder="Add Title">
+            </div>
+            <div class="textfield">
+                <label for="addedtext">Add Text:</label>
+                <textarea name="" cols="30" rows="10" class="textarea" id="addedtext"
+                    placeholder="Type note..."></textarea>
+            </div>
+            <button class="addnote">Add Note</button>
+        </div>
+        <div class="editclass">
+            <div class="createnote1" id="createnote1">
+                <div class="textfield">
+                    <label for="addedtext1">Add Title:</label>
+                    <input type="text" name="text" id="addedtitle1" placeholder="Edit Title">
+                </div>
+                <div class="textfield">
+                    <label for="addedtext1">Add Text: </label>
+                    <textarea name="" class="textarea" id="addedtext1" placeholder="Edit note..."></textarea>
+                </div>
+                <button class="editnote">Edit Note</button>
+            </div>
+        </div>
+        <div class="space">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
